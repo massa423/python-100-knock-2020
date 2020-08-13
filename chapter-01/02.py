@@ -1,10 +1,6 @@
-patrolcar: str = 'パトカー'
+police_car: str = 'パトカー'
 taxi: str = 'タクシー'
 
-res: str = ''
-
-for i in range(len(patrolcar)):
-    res += patrolcar[i]
-    res += taxi[i]
+res: str = ''.join([p + t for p, t in zip(police_car, taxi)])
 
 print(res)
