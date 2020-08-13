@@ -1,3 +1,3 @@
 word: str = 'パタトクカシーー'
 
-print(word[0] + word[2] + word[4] + word[6])
+print(word[::2])
